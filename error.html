@@ -42,7 +42,7 @@
         <main class="container-fluid d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
 
             <div class="p-5 text-center bg-body-tertiary rounded-3">
-                <img src="img/daisy-flower-svgrepo-com.svg" class="bi mt-4 mb-3" width="100" height="100"> </img>
+                <embed src="img/ladybug404.svg" id="error_svg" class="bi mt-4 mb-3" width="300" height="300"> </embed>
                 <h1 class="text-body-emphasis">Parece que no hay nada aquí...</h1>
                 <p class="col-lg-8 mx-auto fs-5 text-muted">
                     Lo sentimos, parece que la sección a la que tratas de acceder no está disponible, continua navegando por el resto de nuestra web para encontrar las mejores soluciones para tu jardín!
@@ -76,4 +76,21 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
     </body>
+
+<script>
+    // Array con las rutas de los SVGs
+console.log("js iniciado");
+    const svgs = [
+        'img/bug404.svg',
+        'img/ladybug404.svg'
+    ];
+    console.log("seleccionar svg");
+    // Selecciona un SVG aleatorio
+    const randomSvg = svgs[Math.floor(Math.random() * svgs.length)];
+    console.log("scg seleccionado:", randomSvg);
+    
+    // Asigna el SVG seleccionado al elemento <embed>
+    document.getElementById('error_svg').setAttribute('src', randomSvg);
+</script>
+
 </html>
